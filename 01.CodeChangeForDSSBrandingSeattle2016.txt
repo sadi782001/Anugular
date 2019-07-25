@@ -1,0 +1,13 @@
+
+	console.log(webUrl);
+	var executor;
+	try 
+	   {
+		executor = new SP.RequestExecutor(webUrl);
+	   }
+     catch(err) 
+          {
+  		console.log("Executor can't be define. Forcefully reloading the page. The Exception details : " + err.message);
+  		location.reload();
+  		return;  	
+	   }
